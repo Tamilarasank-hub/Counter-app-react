@@ -1,0 +1,128 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f2fe, #f0fdf4);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.counter-card {
+  width: 100%;
+  max-width: 450px;
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #1e293b;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.description {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.counter-display {
+  font-size: 80px;
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 30px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.increment-btn {
+  background-color: #16a34a;
+}
+
+.increment-btn:hover {
+  background-color: #15803d;
+}
+
+.decrement-btn {
+  background-color: #dc2626;
+}
+
+.decrement-btn:hover {
+  background-color: #b91c1c;
+}
+
+.reset-btn {
+  background-color: #2563eb;
+}
+
+.reset-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.btn:disabled {
+  background-color: #cbd5e1;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+.message {
+  margin-top: 25px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.minimum {
+  color: #dc2626;
+}
+
+.success {
+  color: #16a34a;
+}
+
+@media (max-width: 480px) {
+  .counter-card {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .counter-display {
+    font-size: 65px;
+  }
+
+  .btn {
+    padding: 10px 14px;
+  }
+}
